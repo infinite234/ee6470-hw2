@@ -1,20 +1,9 @@
-# Homework-1: Implementation of Gaussian Blur Filter
+# Homework-2: Implementation of 3*3 Gaussian blur filter in systemc using fifo channels and also implementing a buffer that will send necessary rows of image pixels until they are not used.
 
 ### _Shivani Singh (309591030)_
 
 ## Introduction
-Gaussian Blur Filter also known as Gaussian smoothing id used for blurring an image using gaussian normal distribution. As we go away from the center, the value of the gaussian kernel exponentially decreases. The kernel for the Gaussian blur can be found by using gaussian function i.e.
-
-for 1D: 
-$$G(x) = exp(\frac{-(x)^2}{2 * (sigma)^2})/\sqrt{(2 * pi * (sigma)^2)}$$
-
-
-for 2D: 
-$$G(x,y) = exp(\frac{-((x)^2+(y)^2)}{2 * (sigma)^2})/\sqrt{(2 * pi * (sigma)^2)}$$
-
-where sigma determines the radius and pi =3.14159.
-
-Applying gaussian kernel to image is done by sliding the kernel window to the image window throught the center of the kernel and then applying convolution of kernel and image at each step.
+For making a gaussian blur filter 
 
 In this homework, two types of implementation is done:
 -Part one is editing the given sobel filter to Gaussian filter in cpp using 3*3 gaussian kernel and\\
