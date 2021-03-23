@@ -63,8 +63,9 @@ o_b.write(B);                        |                 double B = i_b.read();
 
 
 ## Algorithm and Design
+The following design is for the FIFO implementation of the gaussian filter. 
 
-
+![source image](https://github.com/infinite234/ee6470-hw2/blob/main/hw2/gauss_filter.png)<br/>
 
 ## Experimental results
 The input given to the code is a bitmap file and the output er get is a blur image bitmap file.
@@ -90,12 +91,12 @@ lena_gauss2.bmp<br/>
 The gaussian part implementation using FIFO channels completes in 655366 ns and the pixel count is equal to 
 Simulation for gaussian_fifo.<br/>
 
-![source image](https://raw.githubusercontent.com/infinite234/ee6470-hw2/main/hw2/cache_gaussian_fifo/Screenshot from 2021-03-23 00-26-42.png)<br/>
+![source image](https://github.com/infinite234/ee6470-hw2/blob/main/hw2/cache_gaussian_fifo/Screenshot%20from%202021-03-23%2000-26-42.png)<br/>
 
 The gaussian part implementation using FIFO channels completes in 589830 ns and the pixel count is equal to 198115.
 Simulation for cache_gaussian_fifo.<br/>
 
-![source image](https://raw.githubusercontent.com/infinite234/ee6470/main/hw1/gauss_fiter_cpp/lena_std_short.bmp)<br/>
+![source image](https://github.com/infinite234/ee6470-hw2/blob/main/hw2/gaussian_fifo/Screenshot%20from%202021-03-23%2000-13-28.png)<br/>
 
 
 ## Conclusion
