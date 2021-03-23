@@ -86,6 +86,18 @@ lena_std_short.bmp.<br/>
 lena_gauss2.bmp<br/>
 ![target image](https://raw.githubusercontent.com/infinite234/ee6470/main/hw1/gauss_fiter_cpp/lena_gauss2.bmp)<br/>
 
+## Simulation Results
+The gaussian part implementation using FIFO channels completes in 655366 ns and the pixel count is equal to 
+Simulation for gaussian_fifo.<br/>
+
+![source image](https://raw.githubusercontent.com/infinite234/ee6470/main/hw1/gauss_fiter_cpp/lena_std_short.bmp)<br/>
+
+The gaussian part implementation using FIFO channels completes in 589830 ns and the pixel count is equal to 198115.
+Simulation for cache_gaussian_fifo.<br/>
+
+![source image](https://raw.githubusercontent.com/infinite234/ee6470/main/hw1/gauss_fiter_cpp/lena_std_short.bmp)<br/>
+
+
 ## Conclusion
 Thus, successful implementation of gaussian blur filter in software and hardware(systemc) has been done resulting to successful blurring lena.bmp and lena_gauss2.bmp image  as shown in results.
 
