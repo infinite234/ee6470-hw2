@@ -72,7 +72,7 @@ The input given to the code is a bitmap file and the output er get is a blur ima
 ### Part one
 lena.bmp is the original image whereas len_gauss.bmp is the  new blurr image. (software.(.cpp))<br/>
 lena.bmp<br/>
-![source image](https://raw.githubusercontent.com/infinite234/ee6470/main/hw1/gauss_fiter_cpp/lena.bmp)<br/>
+[source image](https://raw.githubusercontent.com/infinite234/ee6470/main/hw1/gauss_fiter_cpp/lena_std_short.bmp)<br/>
 
 lena_gauss.bmp<br/>
 ![target image](https://raw.githubusercontent.com/infinite234/ee6470/main/hw1/gauss_fiter_cpp/lena_gauss2.bmp)<br/><br/>
