@@ -67,6 +67,10 @@ The following design is for the FIFO implementation of the gaussian filter.
 
 ![source image](https://github.com/infinite234/ee6470-hw2/blob/main/hw2/gauss_filter.png)<br/>
 
+For the Cache gaussian filter
+
+![source image](https://github.com/infinite234/ee6470-hw2/blob/main/hw2/cache.png)<br/>
+
 ## Experimental results
 The input given to the code is a bitmap file and the output er get is a blur image bitmap file.
 ### Part one
