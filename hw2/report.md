@@ -95,7 +95,7 @@ lena_gauss2.bmp<br/>
 The gaussian part implementation using FIFO channels completes in 655366 ns and the pixel count is equal to 
 Simulation for gaussian_fifo.<br/>
 
-![source image](https://github.com/infinite234/ee6470-hw2/blob/main/hw2/cache_gaussian_fifo/Screenshot%20from%202021-03-23%2000-26-42.png)<br/>
+![source image](https://github.com/infinite234/ee6470-hw2/blob/main/hw2/cache_gaussian_fifo/simulation.png)<br/>
 
 The gaussian part implementation using FIFO channels completes in 589830 ns and the pixel count is equal to 198115.
 Simulation for cache_gaussian_fifo.<br/>
