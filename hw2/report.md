@@ -92,14 +92,14 @@ lena_gauss2.bmp<br/>
 ![target image](https://raw.githubusercontent.com/infinite234/ee6470/main/hw1/gauss_fiter_cpp/lena_gauss2.bmp)<br/>
 
 ## Simulation Results
-The gaussian part implementation using FIFO channels completes in 655366 ns and the pixel count is equal to 
+The gaussian part implementation using FIFO channels completes in 655366 ns and the pixel count is equal to 589824.
 Simulation for gaussian_fifo.<br/>
 
 ![source image](https://github.com/infinite234/ee6470-hw2/blob/main/hw2/cache_gaussian_fifo/simulation.png)<br/>
 
 The gaussian part implementation using FIFO channels completes in 589830 ns and the pixel count is equal to 198115.
 Simulation for cache_gaussian_fifo.<br/>
-
+So as for the results the value of the pixel transfer in the row based gaussian fifo is around 2.9 times less than that of the normal gaussian and thus the time taken is also less i.e.655366 for gaussian and 589830 for row based gaussian.
 ![source image](https://github.com/infinite234/ee6470-hw2/blob/main/hw2/gaussian_fifo/Screenshot%20from%202021-03-23%2000-13-28.png)<br/>
 
 
