@@ -52,6 +52,13 @@ In this code we are finding the RGB (double) value frrom the source image . sinc
 ```
 Since the value of the kernel value is in integer and the factor for 3*3 matrix is 16 we will edit the target image RGB value for the same positions as of source image to (new RGB value/factor). Thus, successful implementation of applying gaussian blur filter is done.
 
+```sh
+// storing the values and then using it in next iteraton
+        Red_prev[n2] = Red_prev[n2+1];
+          Green_prev[n2] = Green_prev[n2+1];
+          Blue_prev[n2] = Blue_prev[n2+1];
+```
+this is used to reasssign all the previous values that will be used in next iteration merged with the last new column and compute the result.
 ### - SystemC Implementation
 In systemc, firstly three processes are made using sc_module i.e. input(read bmp), calculation(apply_gauss) and output(write bmp). So, the tesbench sends the value of r,g,b of target bitmap image to the gauss_filter where gauss_filter reads the r,g,b value and then compute the r,g,b and result value for output image and sends to the tesbench.cpp when the image is written.
 ```sh
@@ -70,6 +77,8 @@ The following design is for the FIFO implementation of the gaussian filter.
 For the Cache gaussian filter
 
 ![source image](https://github.com/infinite234/ee6470-hw2/blob/main/hw2/cache.png)<br/>
+
+Here, as the window of 3*3 kernel slides we can see that only thr last column is new so we can send the first 3*3 kernel and then just update the last column. This will help in reducing the pixel transfer and just update the last column for computing the new R,G,B pixels.
 
 ## Experimental results
 The input given to the code is a bitmap file and the output er get is a blur image bitmap file.
@@ -104,5 +113,5 @@ So as for the results the value of the pixel transfer in the row based gaussian 
 
 
 ## Conclusion
-Thus, successful implementation of gaussian blur filter in software and hardware(systemc) has been done resulting to successful blurring lena.bmp and lena_gauss2.bmp image  as shown in results.
+Thus, successful implementation of gaussian blur filter with row based buffer and without buffer and their comparison in software and hardware(systemc) has been done resulting to successful blurring lena.bmp and lena_gauss2.bmp image  as shown in results.
 
